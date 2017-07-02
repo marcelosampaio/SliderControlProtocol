@@ -13,6 +13,8 @@
 		8255FEC91F070B1900918D23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEC71F070B1900918D23 /* Main.storyboard */; };
 		8255FECB1F070B1900918D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8255FECA1F070B1900918D23 /* Assets.xcassets */; };
 		8255FECE1F070B1900918D23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8255FECC1F070B1900918D23 /* LaunchScreen.storyboard */; };
+		8255FEDB1F070E6200918D23 /* SliderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8255FEDA1F070E6200918D23 /* SliderControl.m */; };
+		8255FEDD1F070E7500918D23 /* SliderControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8255FEDC1F070E7500918D23 /* SliderControl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		8255FECA1F070B1900918D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8255FECD1F070B1900918D23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8255FECF1F070B1900918D23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8255FED91F070E6200918D23 /* SliderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderControl.h; sourceTree = "<group>"; };
+		8255FEDA1F070E6200918D23 /* SliderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderControl.m; sourceTree = "<group>"; };
+		8255FEDC1F070E7500918D23 /* SliderControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderControl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +63,11 @@
 		8255FEBD1F070B1900918D23 /* Slider */ = {
 			isa = PBXGroup;
 			children = (
-				8255FEC11F070B1900918D23 /* AppDelegate.h */,
-				8255FEC21F070B1900918D23 /* AppDelegate.m */,
-				8255FEC41F070B1900918D23 /* ViewController.h */,
-				8255FEC51F070B1900918D23 /* ViewController.m */,
-				8255FEC71F070B1900918D23 /* Main.storyboard */,
+				8255FED81F070E3800918D23 /* SliderControl */,
+				8255FED71F070E2E00918D23 /* Controllers */,
+				8255FED61F070E1C00918D23 /* Root */,
+				8255FED51F070E0E00918D23 /* User Interface */,
 				8255FECA1F070B1900918D23 /* Assets.xcassets */,
-				8255FECC1F070B1900918D23 /* LaunchScreen.storyboard */,
-				8255FECF1F070B1900918D23 /* Info.plist */,
 				8255FEBE1F070B1900918D23 /* Supporting Files */,
 			);
 			path = Slider;
@@ -77,6 +79,44 @@
 				8255FEBF1F070B1900918D23 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8255FED51F070E0E00918D23 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8255FEC71F070B1900918D23 /* Main.storyboard */,
+				8255FECC1F070B1900918D23 /* LaunchScreen.storyboard */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		8255FED61F070E1C00918D23 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8255FECF1F070B1900918D23 /* Info.plist */,
+				8255FEC11F070B1900918D23 /* AppDelegate.h */,
+				8255FEC21F070B1900918D23 /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		8255FED71F070E2E00918D23 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8255FEC41F070B1900918D23 /* ViewController.h */,
+				8255FEC51F070B1900918D23 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8255FED81F070E3800918D23 /* SliderControl */ = {
+			isa = PBXGroup;
+			children = (
+				8255FED91F070E6200918D23 /* SliderControl.h */,
+				8255FEDA1F070E6200918D23 /* SliderControl.m */,
+				8255FEDC1F070E7500918D23 /* SliderControl.xib */,
+			);
+			name = SliderControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +150,7 @@
 				TargetAttributes = {
 					8255FEBA1F070B1900918D23 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 56H63D8DA5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,6 +180,7 @@
 			files = (
 				8255FECE1F070B1900918D23 /* LaunchScreen.storyboard in Resources */,
 				8255FECB1F070B1900918D23 /* Assets.xcassets in Resources */,
+				8255FEDD1F070E7500918D23 /* SliderControl.xib in Resources */,
 				8255FEC91F070B1900918D23 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +194,7 @@
 			files = (
 				8255FEC61F070B1900918D23 /* ViewController.m in Sources */,
 				8255FEC31F070B1900918D23 /* AppDelegate.m in Sources */,
+				8255FEDB1F070E6200918D23 /* SliderControl.m in Sources */,
 				8255FEC01F070B1900918D23 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = Slider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.Slider;
@@ -283,6 +327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 56H63D8DA5;
 				INFOPLIST_FILE = Slider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MAS.Slider;

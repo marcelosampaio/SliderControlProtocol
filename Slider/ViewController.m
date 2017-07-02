@@ -14,16 +14,20 @@
 
 @implementation ViewController
 
+
+#pragma mark - View Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    self.sliderControl.delegate = self;
+    NSLog(@"🤙");
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - SliderControl Delegate
+-(void)valueChanged:(float)value{
+    NSLog(@"💥 value changed: %f",value);
 }
-
 
 @end

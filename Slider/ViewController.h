@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SliderControl.h"
+@interface ViewController : UIViewController<SliderControlDelegate>
 
-@interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet SliderControl *sliderControl;
 
 
 @end
